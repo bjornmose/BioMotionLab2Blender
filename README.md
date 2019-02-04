@@ -20,6 +20,8 @@ it contains data drawn from https://www.biomotionlab.ca/html5-bml-walker/  .. no
 did take some code reading and put things to python BM
 
 the lower part ports data to Blender (www.blender.org) generates objects in blender to view and control them.
-Control is minimal but works .. that is in blender 3.79 you can run the script .. start the animation (0..39)
-modify the parameters gender .... run the script again .. it works on the allready created tree
+Control is minimal but works .. that is in blender 3.79 
+needs an active time line  (start 0.. end 39) with key frames set to position
+you can run the script .. start the animation (alt-a) 
+modify the parameters gender and others  .... run the script again .. it works on the allready created tree
 so almost live
