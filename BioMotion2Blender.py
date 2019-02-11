@@ -41,7 +41,7 @@ import bmesh
 import numpy as np
 
 
-_scriptversion = '2019_02_10'
+_scriptversion = '2019_02_11'
 # blender 2.79
 class BioMotionLabGenrator():
  version = _scriptversion
@@ -485,8 +485,11 @@ def runit(context):
     print('copy_scale {:} '.format(copy_scale)) 
 
     #select root again 
-    #proot = bpy.data.objects.get(RootName)
-    #if (proot): 
+    proot = bpy.data.objects.get(RootName)
+    if (proot): 
+     bpy.context.scene.objects.active = proot
+     proot.select = True
+
     #    proot.select = True
 
     #done end of runit
